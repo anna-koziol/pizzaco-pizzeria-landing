@@ -1,0 +1,498 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    line-height: 1.4em;
+    vertical-align: baseline;
+    text-decoration: none;
+    outline: 0;
+    overflow-x: hidden;
+}
+
+*:focus, *:hover {
+    outline: none;
+}
+
+body {
+    background-color: rgba(228, 228, 228, 0.1);
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+
+#main-photo {
+    width: 100vw;
+    height: 100vh;
+    /*Photo by Fancycrave on Unsplash*/
+    background-image: url("../gfx/fancycrave-458022-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    border-bottom: 3px solid rgb(255, 168, 92);
+    overflow-y: hidden !important;
+}
+
+.quotes {
+    font-family: 'Kaushan Script', cursive;
+    overflow-y: hidden;
+}
+
+#main-photo>.container>p, p {
+    padding: 10%;
+    font-size: 120%;
+}
+
+h1 {
+    font-size: 600%;
+    padding: 10%;
+}
+
+#know-offer {
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#know-offer>img {
+    margin-top: 2%;
+    width: 10%;
+    height: auto;
+    transform: rotate(180deg);
+}
+
+h2 {
+    color: #557669;
+}
+
+img[alt="cooker"] {
+    width: 100%;
+}
+
+#banner {
+    background-color: rgba(255, 168, 92, 0.219);
+}
+
+.section {
+    margin-top: 10%;
+    padding: 2%;
+}
+
+.onOrange {
+    color: black;
+}
+
+#bannerPizza {
+    background-image: url("../gfx/vita-marija-murenaite-691145-unsplash (1).jpg");
+    height: 200%;
+}
+
+.menu-position {
+    padding-top: 2%;
+    padding-bottom: 2%;
+    border-bottom: 3px solid transparent;
+}
+
+.menu-position:hover {
+    font-weight: bold;
+}
+
+#table-drinks, #table-dinner {
+    display: none;
+}
+
+.description-specials {
+    color: white;
+    background-color: black;
+    padding: 2%;
+    text-align: left;
+}
+
+h5 {
+    color: rgb(255, 168, 92);
+}
+
+.d-s-text {
+    margin-top: 20%;
+    margin-bottom: 20%;
+    color: gainsboro;
+}
+
+.img-full {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#img-sphagetti {
+    background-image: url("../gfx/spaghetti-1987454_1920.jpg");
+}
+
+#img-pizza1 {
+    background-image: url("../gfx/vita-marija-murenaite-691145-unsplash.jpg");
+}
+
+#img-pizza2 {
+    background-image: url("../gfx/pizza-329523_1920.jpg");
+}
+
+#img-soup {
+    background-image: url("../gfx/soup-1787997_1920.jpg");
+}
+
+.reviews {
+    /* This pattern is downloaded from www.subtlepatterns.com */
+    background-image: url("../gfx/food2.png");
+    color: white;
+}
+
+.carousel-caption>h5 {
+    font-size: 2em;
+}
+
+.carousel-caption>p {
+    font-size: 1em;
+}
+
+.carousel-caption {
+    top: 10%;
+    overflow-y: hidden;
+}
+
+#footer {
+    background-color: rgba(255, 168, 92, 0.219);
+    text-align: left;
+}
+
+#footer>div:nth-child(2) {
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.border-informations {
+    font-weight: bold;
+    padding-bottom: 5%;
+    position: relative;
+    margin-bottom: 5%;
+}
+
+.border-informations:after {
+    content: "";
+    background: black;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 33%;
+}
+
+.hours {
+    font-size: 1.2vw;
+}
+
+.navbar-brand {
+    padding: 10px;
+    color: white !important;
+}
+
+.navbar-brand>img {
+    border: 1px dashed white;
+    border-radius: 100%;
+    padding: 5px;
+}
+
+.navbar {
+    display: none;
+    position: fixed;
+    width: 100vw;
+    z-index: 5;
+    top: 0;
+    background-color: black !important;
+}
+
+.navbar-toggler {
+    border-color: rgba(255, 168, 92, 0.4) !important;
+}
+
+.navbar-toggler:active, .navbar-toggler:focus, .navbar-toggler:hover {
+    border-color: rgb(255, 168, 92) !important;
+    outline: none !important;
+    transition: 1s;
+}
+
+.navbar-nav>a {
+    color: white !important;
+}
+
+.navbar-nav>a:hover {
+    color: rgb(255, 168, 92) !important;
+    transition: 1s;
+}
+
+@media screen and (max-width:388px) {
+    h1 {
+        font-size: 400%;
+    }
+    #main-photo>.container>p, p {
+        font-size: 100%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .reverse {
+        flex-direction: row-reverse;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .carousel-caption>h5 {
+        font-size: 2em;
+    }
+    .carousel-caption>p {
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .carousel-caption>h5 {
+        font-size: 1.5em;
+    }
+    .carousel-caption>p {
+        font-size: 0.8em;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .carousel-caption>h5 {
+        font-size: 0.8em;
+    }
+    .carousel-caption>p {
+        padding: 0;
+        margin: 0;
+        margin-top: 2%;
+        font-size: 0.4em;
+    }
+}
+
+@media screen and (max-width:376px) {
+    .carousel-caption>h5 {
+        font-size: 0.6em;
+    }
+    .carousel-caption>p {
+        padding: 0;
+        margin: 0;
+        font-size: 0.4em;
+    }
+}
+
+@media screen and (max-width:575px) {
+    .border-informations {
+        font-size: 1em;
+        padding-bottom: 1%;
+    }
+    .hours {
+        font-size: 2vw;
+        padding-bottom: 4%;
+    }
+    #footer>div:nth-child(2) {
+        border-right: 0px solid rgba(0, 0, 0, 0.1);
+        border-left: 0px solid rgba(0, 0, 0, 0.1);
+    }
+}
+
+#content {
+    overflow-y: hidden !important;
+}
+
+.tracking-in-contract-bck-top {
+    -webkit-animation: tracking-in-contract-bck-top 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    animation: tracking-in-contract-bck-top 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2018-7-16 13:48:22
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation tracking-in-contract-bck-top
+ * ----------------------------------------
+ */
+
+@-webkit-keyframes tracking-in-contract-bck-top {
+    0% {
+        letter-spacing: 1em;
+        -webkit-transform: translateZ(400px) translateY(-300px);
+        transform: translateZ(400px) translateY(-300px);
+        opacity: 0;
+    }
+    40% {
+        opacity: 0.6;
+    }
+    100% {
+        -webkit-transform: translateZ(0) translateY(0);
+        transform: translateZ(0) translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes tracking-in-contract-bck-top {
+    0% {
+        letter-spacing: 1em;
+        -webkit-transform: translateZ(400px) translateY(-300px);
+        transform: translateZ(400px) translateY(-300px);
+        opacity: 0;
+    }
+    40% {
+        opacity: 0.6;
+    }
+    100% {
+        -webkit-transform: translateZ(0) translateY(0);
+        transform: translateZ(0) translateY(0);
+        opacity: 1;
+    }
+}
+
+.slide-in-bottom {
+    -webkit-animation: slide-in-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-in-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes slide-in-bottom {
+    0% {
+        -webkit-transform: translateY(1000px);
+        transform: translateY(1000px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-in-bottom {
+    0% {
+        -webkit-transform: translateY(1000px);
+        transform: translateY(1000px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes jump {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+    40% {
+        transform: translate3d(0, -2%, 0);
+    }
+    100% {
+        transform: translate3d(0, -5%, 0);
+    }
+}
+
+.jump {
+    animation: jump 1s linear alternate infinite;
+}
+
+.fadeInDownBig {
+    -webkit-animation-name: fadeInDownBig;
+    animation-name: fadeInDownBig;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeInDownBig {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -2000px, 0);
+        transform: translate3d(0, -2000px, 0);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+@keyframes fadeInDownBig {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -2000px, 0);
+        transform: translate3d(0, -2000px, 0);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+.slide-in-bottom {
+    -webkit-animation: slide-in-bottom 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-in-bottom 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes slide-in-bottom {
+    0% {
+        -webkit-transform: translateY(1000px);
+        transform: translateY(1000px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-in-bottom {
+    0% {
+        -webkit-transform: translateY(1000px);
+        transform: translateY(1000px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.opacity-grow {
+    -webkit-animation: opacity-grow-f 1s ease-out both;
+    animation: opacity-grow-f 1s ease-out both;
+}
+
+@-webkit-keyframes opacity-grow-f {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes opacity-grow-f {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+.img-full:hover {
+    filter: grayscale(80%);
+    transition: 2s;
+}
