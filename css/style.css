@@ -299,6 +299,42 @@ h5 {
         border-right: 0px solid rgba(0, 0, 0, 0.1);
         border-left: 0px solid rgba(0, 0, 0, 0.1);
     }
+    td, th {
+        font-size: 70%;
+    }
+}
+
+@media screen and (max-width:400px) {
+    td, th {
+        font-size: 60%;
+    }
+}
+
+@media screen and (max-width:350px) {
+    td, th {
+        font-size: 50%;
+    }
+}
+
+@media screen and (max-height:798px) {
+    h1 {
+        padding: 5%;
+    }
+}
+
+@media screen and (max-height:675px) {
+    #main-photo>.container>p {
+        padding: 2%;
+    }
+}
+
+@media screen and (max-height:455px) {
+    #main-photo>.container>p, #know-offer {
+        font-size: 80%;
+    }
+    h1 {
+        font-size: 250%;
+    }
 }
 
 #content {
@@ -489,10 +525,4 @@ h5 {
     100% {
         opacity: 1;
     }
-}
-
-
-.img-full:hover {
-    filter: grayscale(80%);
-    transition: 2s;
 }
